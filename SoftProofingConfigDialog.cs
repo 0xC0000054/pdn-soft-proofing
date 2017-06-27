@@ -898,7 +898,7 @@ namespace SoftProofing
             if (SaveImage())
             {
                 FinishTokenUpdate();
-                this.DialogResult = DialogResult.OK;
+                this.DialogResult = DialogResult.Cancel;
                 Close();
             }
         }
