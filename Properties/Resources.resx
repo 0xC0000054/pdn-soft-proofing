@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AddProfileIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAipJREFUOE+N019IU2EYx/H33QiSNIgKuom6K4iCLsMoa9YiEyy3SNFK1LoxKAai
+        1ZaEZlqOMI1SylEZ/klLkaIk+ktJDYlGqdHIYaUswiBMEn2/PW4LpIvygR+HA8/n/M45nKMUC88p9B2F
+        5aFCzX40m15pliF4OiWzxppsIdslqwVaBwXnzAprXILyseCQ4zpJ3ITgI7n/w5pyWXZLDkv2SewksJgT
+        6ML7/8Kaelk+L6mQuKW5gLU4ucQKAuiiqV+xxb9Hc1tAs+Sq5KLkrPQep4sDjJoN8NFazIPY8szRvHin
+        eCwvpltQF1ZaKcUnbdWYURc82wyNccVUWWLizxCs1bwX1CcJsJRe6X/O2GQ39Hqh6SCcsYFrQTHZMRMZ
+        xtM040GJwJ+kM0bA/MAEX0OrDyo8HLqVzf72DPY2OiZIUMujMMx8NUKb/gw6BJ4gDPYDnQNQ3g55XnJu
+        ZvD0+z32XEmDeWsqUbHb1j0U6SdMze02VHdCqBHMyRC5XVmRpqwbTu4Ot5B+YQfO8q19KWXJ/VHYTJL2
+        8XJlDfhKYahAYOKXCOocuk7bYANNH+q4NlBDw1svdk/ScARaT2PRRynZmW9oSRYYbyaNDnfkXc4MZ9bv
+        8jtqU6l7U0lKmW0a+W2F6x9FoHKi9Bazu2CRoUPz9ZM2p1DfVqH8Sp42Ps27jaqeY9jdG+UUaxTFJkEx
+        x62NR/6v1JEZX7ksLok0uZOwFSaGpy+klFK/AfCEhz9RKhiWAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ChangeRenderingIntentError" xml:space="preserve">
+    <value>Unable to save the color profile with the new rendering intent.</value>
+  </data>
+  <data name="CreateTransformError" xml:space="preserve">
+    <value>Unable to create the color transform.</value>
+  </data>
+  <data name="OpenDestiniationProfileError" xml:space="preserve">
+    <value>Unable to open the destination color profile.</value>
+  </data>
+  <data name="OpenSourceProfileError" xml:space="preserve">
+    <value>Unable to open the source color profile.</value>
+  </data>
+  <data name="RemoveProfileIcon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAlZJREFUOE+Nk0tIlFEYhs+Z0fI+ecus1GSsNNMwyzQqr6OmZlfthpaE0EK6UJRG
+        oyKBCglhJV2gRHJhUqhEiyTSFiYFXRAspSHNAqlFC0mxcp4+bRbSonzh4T8/vA/fOefnVwrfSwr9UGF4
+        olBzjyb5hSYEkaepnLOsKRAlS4gS0TgkctGcZM0pkYoxsEeeCYLrD5FPHvmfrKmWslU4IRwSMvDEnwr0
+        mUf/kjU3pXxZqBWsMrmEGPK4zkr60KVTk47i39G0idAiNAnXhIvsunWYwmO59I8kwgdjGY8d5dnRPOtX
+        dMvFdIr0ACOtFDSUkJ5jYd/ebAZbU6HZtYw6gwpbFWNITE6tsljSe+Q72q5qBkV6K/QRxEuZ38PtO1Vk
+        ZVrYnpVB79k0xo77WhOTUto3JGwaj45ZXyTixA7NhE0QcZzdfKfPPobd9pq2ijLSk1LZmmbhfMpmYtfG
+        Th40hxVOT1bqC15qlHv6M+hhKLfB0DugYwCq79Odf5roNeuIiIyizjfu1U+1vAYl3sw5eynVT5ly6bRT
+        3wHDzWCvGuZN7g1yIrYQHBzK0iAzQSGhNJjiMlERDrGFJN3I8/Ar0HgBRkpgIL6HjSHx+C8MJMNtdWe4
+        d0i5r6yXmVcgW108IxprMOhzVO4stnM3DT56TP3av+jAp6AA8zcPd9N7D68FPtM9F1e3Wg+TN34BS7pm
+        RJWH0hZ7fomfnXbN1y6n/vpAv+BRN3cv3D1N1j+lP9FatxidnIYdr0p5Kpyt2l4u/9c22Yr2NPkcNRid
+        mpznzY90VGZFZf8GGwpHt3hDxVMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="SaveColorSpaceUnsupportedError" xml:space="preserve">
+    <value>Unable to convert the image to the specified color space.  Only RGB, CMYK and Grayscale color profiles are supported.</value>
+  </data>
+  <data name="SaveOptionsTitleFormat" xml:space="preserve">
+    <value>{0} Save Options</value>
+  </data>
+  <data name="UnsupportedColorConversionFormat" xml:space="preserve">
+    <value>Converting to the {0} color space is not supported.</value>
+  </data>
+</root>
