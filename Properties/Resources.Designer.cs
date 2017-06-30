@@ -80,11 +80,29 @@ namespace SoftProofing.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to One of the ConvertToProfile method parameters is not valid..
+        /// </summary>
+        internal static string ConvertProfileInvalidParameter {
+            get {
+                return ResourceManager.GetString("ConvertProfileInvalidParameter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Unable to create the color transform..
         /// </summary>
         internal static string CreateTransformError {
             get {
                 return ResourceManager.GetString("CreateTransformError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The source and destination images must be the same size..
+        /// </summary>
+        internal static string DifferentImageDimensions {
+            get {
+                return ResourceManager.GetString("DifferentImageDimensions", resourceCulture);
             }
         }
         

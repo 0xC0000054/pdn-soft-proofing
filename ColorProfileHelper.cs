@@ -226,9 +226,9 @@ namespace SoftProofing
                         switch (status)
                         {
                             case LCMSEnums.ConvertProfileStatus.InvalidParameter:
-                                throw new LCMSException("One of the ConvertToProfile method parameters is not valid.");
+                                throw new LCMSException(Resources.ConvertProfileInvalidParameter);
                             case LCMSEnums.ConvertProfileStatus.DifferentImageDimensions:
-                                throw new LCMSException("The source and destination images must be the same size.");
+                                throw new LCMSException(Resources.DifferentImageDimensions);
                             case LCMSEnums.ConvertProfileStatus.CreateTransformFailed:
                                 throw new LCMSException(Resources.CreateTransformError);
                             default:
