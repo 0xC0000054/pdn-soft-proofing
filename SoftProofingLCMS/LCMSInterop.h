@@ -94,9 +94,9 @@ struct GdiPlusRectangle
 	int Height;
 };
 
-LCMSINTEROP_API cmsHPROFILE __stdcall OpenColorProfileFromMemory(const void* buffer, cmsUInt32Number bufferSize);
+LCMSINTEROP_API cmsHPROFILE __stdcall OpenColorProfileFromFile(const wchar_t* fileName);
 
-LCMSINTEROP_API cmsBool __stdcall SaveColorProfileToMemory(cmsHPROFILE hProfile, void* buffer, cmsUInt32Number* bufferSize);
+LCMSINTEROP_API cmsBool __stdcall SaveColorProfileToFile(cmsHPROFILE hProfile, const wchar_t* fileName);
 
 LCMSINTEROP_API cmsBool __stdcall CloseColorProfile(cmsHPROFILE hProfile);
 

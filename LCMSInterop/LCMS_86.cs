@@ -22,12 +22,12 @@ namespace SoftProofing.LCMSInterop
     {
         private const string DllName = "SoftProofingLCMS_x86.dll";
 
-        [DllImport(DllName, CallingConvention = CallingConvention.StdCall)]
-        internal static unsafe extern LCMSProfileHandleX86 OpenColorProfileFromMemory(void* buffer, uint bufferSize);
+        [DllImport(DllName, CallingConvention = CallingConvention.StdCall, CharSet = CharSet.Unicode)]
+        internal static unsafe extern LCMSProfileHandleX86 OpenColorProfileFromFile([MarshalAs(UnmanagedType.LPWStr)] string fileName);
 
-        [DllImport(DllName, CallingConvention = CallingConvention.StdCall)]
+        [DllImport(DllName, CallingConvention = CallingConvention.StdCall, CharSet = CharSet.Unicode)]
         [return: MarshalAs(UnmanagedType.Bool)]
-        internal static extern bool SaveColorProfileToMemory(LCMSProfileHandle hProfile, IntPtr buffer, ref uint bufferSize);
+        internal static extern bool SaveColorProfileToFile(LCMSProfileHandle hProfile, [MarshalAs(UnmanagedType.LPWStr)] string fileName);
 
         [ReliabilityContract(Consistency.WillNotCorruptState, Cer.Success)]
         [DllImport(DllName, CallingConvention = CallingConvention.StdCall)]

@@ -179,12 +179,14 @@
   <ItemGroup>
     <ClInclude Include="LCMSInterop.h" />
     <ClInclude Include="resource.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="LCMSInterop.cpp" />
+    <ClInclude Include="UnicodeIOHandler.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SoftProofingLCMS.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LCMSInterop.cpp" />
+    <ClCompile Include="UnicodeIOHandler.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -20,37 +20,25 @@ namespace SoftProofing.LCMSInterop
     {
         internal static LCMSProfileHandle OpenColorProfile(string fileName)
         {
-            byte[] buffer = File.ReadAllBytes(fileName);
-            return OpenColorProfile(buffer);
-        }
-
-        internal static LCMSProfileHandle OpenColorProfile(byte[] buffer)
-        {
-            unsafe
-            {
-                fixed (byte* ptr = buffer)
-                {
-                    if (IntPtr.Size == 8)
-                    {
-                        return LCMS_64.OpenColorProfileFromMemory((void*)ptr, (uint)buffer.Length);
-                    }
-                    else
-                    {
-                        return LCMS_86.OpenColorProfileFromMemory((void*)ptr, (uint)buffer.Length);
-                    }
-                } 
-            }
-        }
-
-        internal static bool SaveColorProfileToMemory(LCMSProfileHandle hProfile, IntPtr buffer, ref uint bufferSize)
-        {
             if (IntPtr.Size == 8)
             {
-                return LCMS_64.SaveColorProfileToMemory(hProfile, buffer, ref bufferSize);
+                return LCMS_64.OpenColorProfileFromFile(fileName);
             }
             else
             {
-                return LCMS_86.SaveColorProfileToMemory(hProfile, buffer, ref bufferSize);
+                return LCMS_86.OpenColorProfileFromFile(fileName);
+            }
+        }
+
+        internal static bool SaveColorProfile(LCMSProfileHandle hProfile, string fileName)
+        {
+            if (IntPtr.Size == 8)
+            {
+                return LCMS_64.SaveColorProfileToFile(hProfile, fileName);
+            }
+            else
+            {
+                return LCMS_86.SaveColorProfileToFile(hProfile, fileName);
             } 
         }
 

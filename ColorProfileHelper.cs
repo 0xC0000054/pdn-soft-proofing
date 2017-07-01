@@ -269,32 +269,14 @@ namespace SoftProofing
                 {
                     LCMSHelper.SetProfileRenderingIntent(profile, renderingIntent);
 
-                    uint bufferSize = 0U;
-                    LCMSHelper.SaveColorProfileToMemory(profile, IntPtr.Zero, ref bufferSize);
+                    newProfileFileName = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
 
-                    if (bufferSize > 0U)
+                    if (!LCMSHelper.SaveColorProfile(profile, newProfileFileName))
                     {
-                        int length = checked((int)bufferSize);
-                        byte[] bytes = new byte[length];
-
-                        unsafe
-                        {
-                            fixed (byte* ptr = bytes)
-                            {
-                                if (!LCMSHelper.SaveColorProfileToMemory(profile, (IntPtr)ptr, ref bufferSize))
-                                {
-                                    throw new LCMSException(Resources.ChangeRenderingIntentError);
-                                }
-                            }
-                        }
-
-                        newProfileFileName = Path.Combine(Path.GetTempPath(), Path.GetRandomFileName());
-                        using (FileStream stream = new FileStream(newProfileFileName, FileMode.Create, FileAccess.Write, FileShare.None))
-                        {
-                            stream.Write(bytes, 0, bytes.Length);
-                        }
-                        renderingIntentChanged = true;
+                        throw new LCMSException(Resources.ChangeRenderingIntentError);
                     }
+
+                    renderingIntentChanged = true;
                 }
             }
 

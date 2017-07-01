@@ -12,15 +12,31 @@
 #include "lcms2.h"
 #include "LCMSInterop.h"
 #include <memory.h>
+#include "UnicodeIOHandler.h"
 
-cmsHPROFILE __stdcall OpenColorProfileFromMemory(const void* buffer, cmsUInt32Number bufferSize)
+cmsHPROFILE __stdcall OpenColorProfileFromFile(const wchar_t* fileName)
 {
-	return cmsOpenProfileFromMem(buffer, bufferSize);
+	cmsIOHANDLER* io = OpenIOHandlerFromUnicodeFile(nullptr, fileName, UnicodeIOHandlerRead);
+	if (io == nullptr)
+	{
+		return nullptr;
+	}
+
+	return cmsOpenProfileFromIOhandlerTHR(nullptr, io);
 }
 
-cmsBool __stdcall SaveColorProfileToMemory(cmsHPROFILE hProfile, void* buffer, cmsUInt32Number* bufferSize)
+cmsBool __stdcall SaveColorProfileToFile(cmsHPROFILE hProfile, const wchar_t* fileName)
 {
-	return cmsSaveProfileToMem(hProfile, buffer, bufferSize);
+	cmsIOHANDLER* io = OpenIOHandlerFromUnicodeFile(nullptr, fileName, UnicodeIOHandlerWrite);
+	if (io == nullptr)
+	{
+		return FALSE;
+	}
+
+	cmsBool result = cmsSaveProfileToIOhandler(hProfile, io) != 0;
+	result &= cmsCloseIOhandler(io);
+
+	return result;
 }
 
 cmsBool __stdcall CloseColorProfile(cmsHPROFILE hProfile)
