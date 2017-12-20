@@ -590,6 +590,7 @@ namespace SoftProofing
             {
                 ShowErrorMessage(ex.Message);
             }
+            PluginThemingUtil.EnableEffectDialogTheme(this);
         }
 
         protected override void OnShown(EventArgs e)
@@ -790,6 +791,10 @@ namespace SoftProofing
 
                         using (SaveOptionsDialog optionsDialog = new SaveOptionsDialog(tiff, profile))
                         {
+                            optionsDialog.BackColor = BackColor;
+                            optionsDialog.ForeColor = ForeColor;
+                            PluginThemingUtil.UpdateControlColors(optionsDialog);
+
                             if (optionsDialog.ShowDialog(this) == DialogResult.OK)
                             {
                                 SaveOptions options = optionsDialog.Options;
@@ -1004,6 +1009,10 @@ namespace SoftProofing
         {
             using (ColorPickerForm form = new ColorPickerForm("Choose a gamut warning color:"))
             {
+                form.BackColor = BackColor;
+                form.ForeColor = ForeColor;
+                PluginThemingUtil.UpdateControlColors(form);
+
                 form.SetDefaultColor(this.gamutWarningColorButton.Value);
                 if (form.ShowDialog(this) == DialogResult.OK)
                 {
