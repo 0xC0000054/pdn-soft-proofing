@@ -4,7 +4,7 @@
 //
 // This software is provided under the MIT License:
 //   Copyright (C) 2016-2017 Nicholas Hayes
-// 
+//
 // See LICENSE.txt for complete licensing and attribution information.
 //
 /////////////////////////////////////////////////////////////////////////////////
@@ -24,7 +24,7 @@ namespace SoftProofing
         internal static extern SafeDCHandle CreateDC(
             string pwszDriver,
             string pwszDevice,
-            string pszPort, 
+            string pszPort,
             IntPtr pdm
             );
 
@@ -48,7 +48,7 @@ namespace SoftProofing
         [return: MarshalAs(UnmanagedType.Bool)]
         internal static extern bool GetStandardColorSpaceProfile(
             string pMachineName,
-            uint dwProfileID, 
+            uint dwProfileID,
             [Out()] StringBuilder pProfileName,
             ref uint pdwSize
             );

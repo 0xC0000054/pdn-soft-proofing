@@ -4,7 +4,7 @@
 //
 // This software is provided under the MIT License:
 //   Copyright (C) 2016-2017 Nicholas Hayes
-// 
+//
 // See LICENSE.txt for complete licensing and attribution information.
 //
 /////////////////////////////////////////////////////////////////////////////////
@@ -132,8 +132,8 @@ namespace SoftProofing
         protected override void InitialInitToken()
         {
             this.theEffectToken = new SoftProofingConfigToken(
-                null, 
-                null, 
+                null,
+                null,
                 RenderingIntent.Perceptual,
                 null,
                 -1,
@@ -225,9 +225,9 @@ namespace SoftProofing
             this.inputProfileHeader = new PaintDotNet.HeaderLabel();
             this.gamutWarningColorButton = new SoftProofing.ColorButton();
             this.SuspendLayout();
-            // 
+            //
             // saveButton
-            // 
+            //
             this.saveButton.Location = new System.Drawing.Point(194, 313);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
@@ -235,9 +235,9 @@ namespace SoftProofing
             this.saveButton.Text = "Save...";
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
-            // 
+            //
             // cancelButton
-            // 
+            //
             this.cancelButton.Location = new System.Drawing.Point(275, 313);
             this.cancelButton.Name = "cancelButton";
             this.cancelButton.Size = new System.Drawing.Size(75, 23);
@@ -245,9 +245,9 @@ namespace SoftProofing
             this.cancelButton.Text = "Cancel";
             this.cancelButton.UseVisualStyleBackColor = true;
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
-            // 
+            //
             // chooseInputProfileButton
-            // 
+            //
             this.chooseInputProfileButton.Location = new System.Drawing.Point(275, 31);
             this.chooseInputProfileButton.Name = "chooseInputProfileButton";
             this.chooseInputProfileButton.Size = new System.Drawing.Size(75, 23);
@@ -256,9 +256,9 @@ namespace SoftProofing
             this.toolTip1.SetToolTip(this.chooseInputProfileButton, "Choose a color profile for the image");
             this.chooseInputProfileButton.UseVisualStyleBackColor = true;
             this.chooseInputProfileButton.Click += new System.EventHandler(this.chooseInputProfileButton_Click);
-            // 
+            //
             // chooseMonitorProfileButton
-            // 
+            //
             this.chooseMonitorProfileButton.Location = new System.Drawing.Point(275, 78);
             this.chooseMonitorProfileButton.Name = "chooseMonitorProfileButton";
             this.chooseMonitorProfileButton.Size = new System.Drawing.Size(75, 23);
@@ -267,9 +267,9 @@ namespace SoftProofing
             this.toolTip1.SetToolTip(this.chooseMonitorProfileButton, "Choose a color profile for the current monitor");
             this.chooseMonitorProfileButton.UseVisualStyleBackColor = true;
             this.chooseMonitorProfileButton.Click += new System.EventHandler(this.chooseMonitorProfileButton_Click);
-            // 
+            //
             // displayIntentCombo
-            // 
+            //
             this.displayIntentCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.displayIntentCombo.FormattingEnabled = true;
             this.displayIntentCombo.Items.AddRange(new object[] {
@@ -284,9 +284,9 @@ namespace SoftProofing
             this.displayIntentCombo.TabIndex = 3;
             this.toolTip1.SetToolTip(this.displayIntentCombo, "Set the display rendering intent");
             this.displayIntentCombo.SelectedIndexChanged += new System.EventHandler(this.displayIntentCombo_SelectedIndexChanged);
-            // 
+            //
             // proofingIntentCombo
-            // 
+            //
             this.proofingIntentCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.proofingIntentCombo.FormattingEnabled = true;
             this.proofingIntentCombo.Items.AddRange(new object[] {
@@ -301,9 +301,9 @@ namespace SoftProofing
             this.proofingIntentCombo.TabIndex = 7;
             this.toolTip1.SetToolTip(this.proofingIntentCombo, "Set the soft proofing rendering intent");
             this.proofingIntentCombo.SelectedIndexChanged += new System.EventHandler(this.proofingIntentCombo_SelectedIndexChanged);
-            // 
+            //
             // blackPointCheckBox
-            // 
+            //
             this.blackPointCheckBox.AutoSize = true;
             this.blackPointCheckBox.Checked = true;
             this.blackPointCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -315,27 +315,27 @@ namespace SoftProofing
             this.toolTip1.SetToolTip(this.blackPointCheckBox, "Adjust for differences in the darkest colors of the input and target profiles");
             this.blackPointCheckBox.UseVisualStyleBackColor = true;
             this.blackPointCheckBox.CheckedChanged += new System.EventHandler(this.blackPointCheckBox_CheckedChanged);
-            // 
+            //
             // inputProfileDescription
-            // 
+            //
             this.inputProfileDescription.AutoSize = true;
             this.inputProfileDescription.Location = new System.Drawing.Point(12, 36);
             this.inputProfileDescription.Name = "inputProfileDescription";
             this.inputProfileDescription.Size = new System.Drawing.Size(116, 13);
             this.inputProfileDescription.TabIndex = 18;
             this.inputProfileDescription.Text = "Input profile description";
-            // 
+            //
             // displayProfileDescription
-            // 
+            //
             this.displayProfileDescription.AutoSize = true;
             this.displayProfileDescription.Location = new System.Drawing.Point(12, 83);
             this.displayProfileDescription.Name = "displayProfileDescription";
             this.displayProfileDescription.Size = new System.Drawing.Size(126, 13);
             this.displayProfileDescription.TabIndex = 19;
             this.displayProfileDescription.Text = "Display profile description";
-            // 
+            //
             // proofingProfilesCombo
-            // 
+            //
             this.proofingProfilesCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.proofingProfilesCombo.FormattingEnabled = true;
             this.proofingProfilesCombo.Items.AddRange(new object[] {
@@ -346,9 +346,9 @@ namespace SoftProofing
             this.proofingProfilesCombo.TabIndex = 4;
             this.toolTip1.SetToolTip(this.proofingProfilesCombo, "Select the device profile to simulate");
             this.proofingProfilesCombo.SelectedIndexChanged += new System.EventHandler(this.proofingProfilesCombo_SelectedIndexChanged);
-            // 
+            //
             // gamutWarningCheckBox
-            // 
+            //
             this.gamutWarningCheckBox.AutoSize = true;
             this.gamutWarningCheckBox.Location = new System.Drawing.Point(12, 268);
             this.gamutWarningCheckBox.Name = "gamutWarningCheckBox";
@@ -358,20 +358,20 @@ namespace SoftProofing
             this.toolTip1.SetToolTip(this.gamutWarningCheckBox, "Mark the colors that are outside of the gamut for the target device");
             this.gamutWarningCheckBox.UseVisualStyleBackColor = true;
             this.gamutWarningCheckBox.CheckedChanged += new System.EventHandler(this.gamutWarningCheckBox_CheckedChanged);
-            // 
+            //
             // openFileDialog1
-            // 
+            //
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "Color Profiles (*.icm;*.icc)|*.icm;*.icc";
-            // 
+            //
             // saveFileDialog1
-            // 
+            //
             this.saveFileDialog1.Filter = "JPEG Image (*.jpg, *.jpe, *.jpeg, *.jfif)|*.jpg;*.jpe;*.jpeg;*.jfif|TIFF Image (*" +
     ".tif, *.tiff)|*.tif;*.tiff";
             this.saveFileDialog1.FilterIndex = 2;
-            // 
+            //
             // addProofingProfileButton
-            // 
+            //
             this.addProofingProfileButton.Image = global::SoftProofing.Properties.Resources.AddProfileIcon;
             this.addProofingProfileButton.Location = new System.Drawing.Point(275, 178);
             this.addProofingProfileButton.Name = "addProofingProfileButton";
@@ -380,9 +380,9 @@ namespace SoftProofing
             this.toolTip1.SetToolTip(this.addProofingProfileButton, "Add a proofing color profile");
             this.addProofingProfileButton.UseVisualStyleBackColor = true;
             this.addProofingProfileButton.Click += new System.EventHandler(this.addProofingProfileButton_Click);
-            // 
+            //
             // removeProofingProfileButton
-            // 
+            //
             this.removeProofingProfileButton.Image = global::SoftProofing.Properties.Resources.RemoveProfileIcon;
             this.removeProofingProfileButton.Location = new System.Drawing.Point(313, 178);
             this.removeProofingProfileButton.Name = "removeProofingProfileButton";
@@ -391,9 +391,9 @@ namespace SoftProofing
             this.toolTip1.SetToolTip(this.removeProofingProfileButton, "Remove the selected color profile");
             this.removeProofingProfileButton.UseVisualStyleBackColor = true;
             this.removeProofingProfileButton.Click += new System.EventHandler(this.removeProofingProfileButton_Click);
-            // 
+            //
             // proofingIntentHeader
-            // 
+            //
             this.proofingIntentHeader.ForeColor = System.Drawing.SystemColors.Highlight;
             this.proofingIntentHeader.Location = new System.Drawing.Point(13, 203);
             this.proofingIntentHeader.Name = "proofingIntentHeader";
@@ -401,9 +401,9 @@ namespace SoftProofing
             this.proofingIntentHeader.TabIndex = 15;
             this.proofingIntentHeader.TabStop = false;
             this.proofingIntentHeader.Text = "Softproof rendering intent";
-            // 
+            //
             // monitorIntentHeader
-            // 
+            //
             this.monitorIntentHeader.ForeColor = System.Drawing.SystemColors.Highlight;
             this.monitorIntentHeader.Location = new System.Drawing.Point(13, 108);
             this.monitorIntentHeader.Name = "monitorIntentHeader";
@@ -411,9 +411,9 @@ namespace SoftProofing
             this.monitorIntentHeader.TabIndex = 11;
             this.monitorIntentHeader.TabStop = false;
             this.monitorIntentHeader.Text = "Display rendering intent";
-            // 
+            //
             // proofingProfileHeader
-            // 
+            //
             this.proofingProfileHeader.ForeColor = System.Drawing.SystemColors.Highlight;
             this.proofingProfileHeader.Location = new System.Drawing.Point(13, 155);
             this.proofingProfileHeader.Name = "proofingProfileHeader";
@@ -421,9 +421,9 @@ namespace SoftProofing
             this.proofingProfileHeader.TabIndex = 7;
             this.proofingProfileHeader.TabStop = false;
             this.proofingProfileHeader.Text = "Softproof target color profile";
-            // 
+            //
             // displayProfileHeader
-            // 
+            //
             this.displayProfileHeader.ForeColor = System.Drawing.SystemColors.Highlight;
             this.displayProfileHeader.Location = new System.Drawing.Point(13, 60);
             this.displayProfileHeader.Name = "displayProfileHeader";
@@ -431,9 +431,9 @@ namespace SoftProofing
             this.displayProfileHeader.TabIndex = 5;
             this.displayProfileHeader.TabStop = false;
             this.displayProfileHeader.Text = "Display color profile";
-            // 
+            //
             // inputProfileHeader
-            // 
+            //
             this.inputProfileHeader.ForeColor = System.Drawing.SystemColors.Highlight;
             this.inputProfileHeader.Location = new System.Drawing.Point(12, 12);
             this.inputProfileHeader.Name = "inputProfileHeader";
@@ -441,9 +441,9 @@ namespace SoftProofing
             this.inputProfileHeader.TabIndex = 3;
             this.inputProfileHeader.TabStop = false;
             this.inputProfileHeader.Text = "Input color profile";
-            // 
+            //
             // gamutWarningColorButton
-            // 
+            //
             this.gamutWarningColorButton.Location = new System.Drawing.Point(177, 268);
             this.gamutWarningColorButton.Name = "gamutWarningColorButton";
             this.gamutWarningColorButton.Size = new System.Drawing.Size(63, 17);
@@ -451,9 +451,9 @@ namespace SoftProofing
             this.toolTip1.SetToolTip(this.gamutWarningColorButton, "Select the gamut warning color");
             this.gamutWarningColorButton.Value = System.Drawing.Color.Gray;
             this.gamutWarningColorButton.Click += new System.EventHandler(this.gamutWarningColorButton_Click);
-            // 
+            //
             // SoftProofingConfigDialog
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.ClientSize = new System.Drawing.Size(362, 348);
             this.Controls.Add(this.gamutWarningColorButton);
@@ -520,7 +520,7 @@ namespace SoftProofing
                     this.xmlSettings = (XMLSettingsContainer)serializer.Deserialize(fs);
                 }
 
-                // Check to make sure that the dialog has not already been initialized from the token. 
+                // Check to make sure that the dialog has not already been initialized from the token.
                 if (this.xmlSettings.InputProfile != null && this.inputProfile == null)
                 {
                     this.inputProfile = this.xmlSettings.InputProfile;
@@ -613,7 +613,7 @@ namespace SoftProofing
                     {
                         displayProfilePath = srgbProfile;
                     }
-                    this.displayProfile = new ColorProfileInfo(displayProfilePath); 
+                    this.displayProfile = new ColorProfileInfo(displayProfilePath);
                 }
 
                 this.displayProfileDescription.Text = this.displayProfile.Description;
@@ -726,7 +726,7 @@ namespace SoftProofing
                             src++;
                             dst += 3;
                         }
-                    } 
+                    }
                 }
 
                 return image;
@@ -735,7 +735,7 @@ namespace SoftProofing
 
         private PixelFormat GetDestiniationPixelFormat(bool tiff, ProfileColorSpace colorSpace)
         {
-            PixelFormat destiniationFormat; 
+            PixelFormat destiniationFormat;
             if (tiff)
             {
                 switch (colorSpace)
@@ -769,7 +769,7 @@ namespace SoftProofing
                         break;
                     default:
                         throw new NotSupportedException(string.Format(CultureInfo.CurrentCulture, Resources.UnsupportedColorConversionFormat, colorSpace));
-                } 
+                }
             }
 
             return destiniationFormat;
@@ -887,7 +887,7 @@ namespace SoftProofing
                 catch (UnauthorizedAccessException ex)
                 {
                     ShowErrorMessage(ex.Message);
-                } 
+                }
             }
 
             return result;
@@ -989,7 +989,7 @@ namespace SoftProofing
                     this.removeProofingProfileButton.Enabled = false;
                     this.proofingProfileIndex = -1;
                 }
-                
+
                 UpdateConfigToken();
             }
         }

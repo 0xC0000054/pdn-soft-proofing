@@ -4,7 +4,7 @@
 //
 // This software is provided under the MIT License:
 //   Copyright (C) 2017 Nicholas Hayes
-// 
+//
 // See LICENSE.txt for complete licensing and attribution information.
 //
 /////////////////////////////////////////////////////////////////////////////////
@@ -76,7 +76,7 @@ static cmsBool FileClose(cmsIOHANDLER* ioHandler)
 }
 
 cmsIOHANDLER* OpenIOHandlerFromUnicodeFile(const cmsContext contextID, const wchar_t* fileName, const UnicodeIOHandlerAccess access)
-{	
+{
 	cmsIOHANDLER* ioHandler = nullptr;
 	FILE* file = nullptr;
 	errno_t error;

@@ -4,7 +4,7 @@
 //
 // This software is provided under the MIT License:
 //   Copyright (C) 2016-2017 Nicholas Hayes
-// 
+//
 // See LICENSE.txt for complete licensing and attribution information.
 //
 /////////////////////////////////////////////////////////////////////////////////
@@ -39,7 +39,7 @@ namespace SoftProofing.LCMSInterop
             else
             {
                 return LCMS_86.SaveColorProfileToFile(hProfile, fileName);
-            } 
+            }
         }
 
         private static void SetGamutWarningColor(Color gamutWarningColor)
@@ -84,7 +84,7 @@ namespace SoftProofing.LCMSInterop
             {
                 flags |= LCMSEnums.TransformFlags.SoftProofing;
             }
-            
+
             if (UseBlackPointCompensation(blackPointCompensation, proofingIntent))
             {
                 flags |= LCMSEnums.TransformFlags.BlackPointCompensation;

@@ -4,7 +4,7 @@
 //
 // This software is provided under the MIT License:
 //   Copyright (C) 2016-2017 Nicholas Hayes
-// 
+//
 // See LICENSE.txt for complete licensing and attribution information.
 //
 /////////////////////////////////////////////////////////////////////////////////
@@ -17,7 +17,7 @@ namespace SoftProofing.LCMSInterop
     {
         protected LCMSTransformHandle(bool ownsHandle) : base(ownsHandle)
         {
-        } 
+        }
     }
 
     internal sealed class LCMSTransformHandleX86 : LCMSTransformHandle

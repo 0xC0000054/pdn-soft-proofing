@@ -4,7 +4,7 @@
 //
 // This software is provided under the MIT License:
 //   Copyright (C) 2016-2017 Nicholas Hayes
-// 
+//
 // See LICENSE.txt for complete licensing and attribution information.
 //
 /////////////////////////////////////////////////////////////////////////////////
@@ -88,7 +88,7 @@ namespace SoftProofing
                 path = profile;
             }
             else
-            {            
+            {
                 // GetStandardColorSpace may return a relative path to the system color directory.
                 bufferSize = NativeConstants.MAX_PATH;
                 if (!SafeNativeMethods.GetColorDirectory(null, builder, ref bufferSize))
@@ -206,7 +206,7 @@ namespace SoftProofing
                     };
 
                     LCMSEnums.TransformFlags flags = LCMSEnums.TransformFlags.None;
-                    
+
                     if (LCMSHelper.UseBlackPointCompensation(blackPointCompensation, intent))
                     {
                         flags |= LCMSEnums.TransformFlags.BlackPointCompensation;

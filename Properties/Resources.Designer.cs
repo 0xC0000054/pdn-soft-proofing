@@ -10,8 +10,8 @@
 
 namespace SoftProofing.Properties {
     using System;
-    
-    
+
+
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -23,15 +23,15 @@ namespace SoftProofing.Properties {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
-        
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal Resources() {
         }
-        
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -45,7 +45,7 @@ namespace SoftProofing.Properties {
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
@@ -59,7 +59,7 @@ namespace SoftProofing.Properties {
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
@@ -69,7 +69,7 @@ namespace SoftProofing.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Unable to save the color profile with the new rendering intent..
         /// </summary>
@@ -78,7 +78,7 @@ namespace SoftProofing.Properties {
                 return ResourceManager.GetString("ChangeRenderingIntentError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to One of the ConvertToProfile method parameters is not valid..
         /// </summary>
@@ -87,7 +87,7 @@ namespace SoftProofing.Properties {
                 return ResourceManager.GetString("ConvertProfileInvalidParameter", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Unable to create the color transform..
         /// </summary>
@@ -96,7 +96,7 @@ namespace SoftProofing.Properties {
                 return ResourceManager.GetString("CreateTransformError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to The source and destination images must be the same size..
         /// </summary>
@@ -105,7 +105,7 @@ namespace SoftProofing.Properties {
                 return ResourceManager.GetString("DifferentImageDimensions", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Unable to open the destination color profile..
         /// </summary>
@@ -114,7 +114,7 @@ namespace SoftProofing.Properties {
                 return ResourceManager.GetString("OpenDestiniationProfileError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Unable to open the source color profile..
         /// </summary>
@@ -123,7 +123,7 @@ namespace SoftProofing.Properties {
                 return ResourceManager.GetString("OpenSourceProfileError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
@@ -133,7 +133,7 @@ namespace SoftProofing.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Unable to convert the image to the specified color space.  Only RGB, CMYK and Grayscale color profiles are supported..
         /// </summary>
@@ -142,7 +142,7 @@ namespace SoftProofing.Properties {
                 return ResourceManager.GetString("SaveColorSpaceUnsupportedError", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to {0} Save Options.
         /// </summary>
@@ -151,7 +151,7 @@ namespace SoftProofing.Properties {
                 return ResourceManager.GetString("SaveOptionsTitleFormat", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Converting to the {0} color space is not supported..
         /// </summary>

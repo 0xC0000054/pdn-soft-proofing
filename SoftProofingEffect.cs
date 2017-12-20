@@ -4,7 +4,7 @@
 //
 // This software is provided under the MIT License:
 //   Copyright (C) 2016-2017 Nicholas Hayes
-// 
+//
 // See LICENSE.txt for complete licensing and attribution information.
 //
 /////////////////////////////////////////////////////////////////////////////////
@@ -71,7 +71,7 @@ namespace SoftProofing
         {
             SoftProofingConfigToken token = (SoftProofingConfigToken)parameters;
             if (this.colorManagement == null)
-            {   
+            {
                 this.colorManagement = new ColorManagement();
             }
 

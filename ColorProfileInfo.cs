@@ -4,7 +4,7 @@
 //
 // This software is provided under the MIT License:
 //   Copyright (C) 2016-2017 Nicholas Hayes
-// 
+//
 // See LICENSE.txt for complete licensing and attribution information.
 //
 /////////////////////////////////////////////////////////////////////////////////
@@ -23,7 +23,7 @@ namespace SoftProofing
         private string description;
         private ProfileColorSpace colorSpace;
 
-        internal const string XMLArrayItemName = "Profile"; 
+        internal const string XMLArrayItemName = "Profile";
 
         public string Path
         {
@@ -87,7 +87,7 @@ namespace SoftProofing
             unchecked
             {
                 hash = (hash * 127) + (this.path != null ? this.path.GetHashCode() : 0);
-                hash = (hash * 127) + (this.description != null ? this.description.GetHashCode() : 0); 
+                hash = (hash * 127) + (this.description != null ? this.description.GetHashCode() : 0);
                 hash = (hash * 127) + this.colorSpace.GetHashCode();
             }
             return hash;
@@ -150,7 +150,7 @@ namespace SoftProofing
             writer.WriteAttributeString("Path", this.path);
             writer.WriteAttributeString("Description", this.description);
             writer.WriteAttributeString("ColorSpace", this.colorSpace.ToString("G"));
-        } 
+        }
         #endregion
     }
 }
