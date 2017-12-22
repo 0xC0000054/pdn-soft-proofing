@@ -574,6 +574,20 @@ namespace SoftProofing
             }
         }
 
+        protected override void OnBackColorChanged(EventArgs e)
+        {
+            base.OnBackColorChanged(e);
+
+            PluginThemingUtil.UpdateControlBackColor(this);
+        }
+
+        protected override void OnForeColorChanged(EventArgs e)
+        {
+            base.OnForeColorChanged(e);
+
+            PluginThemingUtil.UpdateControlForeColor(this);
+        }
+
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
@@ -793,7 +807,6 @@ namespace SoftProofing
                         {
                             optionsDialog.BackColor = BackColor;
                             optionsDialog.ForeColor = ForeColor;
-                            PluginThemingUtil.UpdateControlColors(optionsDialog);
 
                             if (optionsDialog.ShowDialog(this) == DialogResult.OK)
                             {
@@ -1011,7 +1024,6 @@ namespace SoftProofing
             {
                 form.BackColor = BackColor;
                 form.ForeColor = ForeColor;
-                PluginThemingUtil.UpdateControlColors(form);
 
                 form.SetDefaultColor(this.gamutWarningColorButton.Value);
                 if (form.ShowDialog(this) == DialogResult.OK)

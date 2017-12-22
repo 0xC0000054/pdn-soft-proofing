@@ -22,6 +22,7 @@ using System;
 using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace PaintDotNet
 {
@@ -336,6 +337,51 @@ namespace PaintDotNet
 
             this.swatchControl.Colors = paletteColors;
             this.hexBox.Text = "000000";
+        }
+
+        public override Color BackColor
+        {
+            get
+            {
+                if (SystemInformation.HighContrast || !VisualStyleInformation.IsEnabledByUser)
+                {
+                    return DefaultBackColor;
+                }
+
+                return base.BackColor;
+            }
+            set
+            {
+                base.BackColor = value;
+                SoftProofing.PluginThemingUtil.UpdateControlBackColor(this);
+            }
+        }
+
+        public override Color ForeColor
+        {
+            get
+            {
+                if (SystemInformation.HighContrast || !VisualStyleInformation.IsEnabledByUser)
+                {
+                    return DefaultForeColor;
+                }
+
+                return base.ForeColor;
+            }
+            set
+            {
+                base.ForeColor = value;
+                SoftProofing.PluginThemingUtil.UpdateControlForeColor(this);
+            }
+        }
+
+        protected override void OnSystemColorsChanged(EventArgs e)
+        {
+            base.OnSystemColorsChanged(e);
+
+            SoftProofing.PluginThemingUtil.UpdateControlBackColor(this);
+            SoftProofing.PluginThemingUtil.UpdateControlForeColor(this);
+            Invalidate(true);
         }
 
         /// <summary>

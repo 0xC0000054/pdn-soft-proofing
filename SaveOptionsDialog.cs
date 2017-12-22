@@ -15,6 +15,7 @@ using System;
 using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace SoftProofing
 {
@@ -52,6 +53,42 @@ namespace SoftProofing
             ResizeDialog();
         }
 
+        public override Color BackColor
+        {
+            get
+            {
+                if (SystemInformation.HighContrast || !VisualStyleInformation.IsEnabledByUser)
+                {
+                    return DefaultBackColor;
+                }
+
+                return base.BackColor;
+            }
+            set
+            {
+                base.BackColor = value;
+                PluginThemingUtil.UpdateControlBackColor(this);
+            }
+        }
+
+        public override Color ForeColor
+        {
+            get
+            {
+                if (SystemInformation.HighContrast || !VisualStyleInformation.IsEnabledByUser)
+                {
+                    return DefaultForeColor;
+                }
+
+                return base.ForeColor;
+            }
+            set
+            {
+                base.ForeColor = value;
+                PluginThemingUtil.UpdateControlForeColor(this);
+            }
+        }
+
         public SaveOptions Options
         {
             get
@@ -65,6 +102,14 @@ namespace SoftProofing
                     return new JPEGSaveOptions(jpegQualitySlider.Value, (double)horizontalResUpDown.Value, (double)verticalResUpDown.Value);
                 }
             }
+        }
+
+        protected override void OnSystemColorsChanged(EventArgs e)
+        {
+            base.OnSystemColorsChanged(e);
+
+            PluginThemingUtil.UpdateControlBackColor(this);
+            PluginThemingUtil.UpdateControlForeColor(this);
         }
 
         private void okButton_Click(object sender, EventArgs e)
