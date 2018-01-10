@@ -3,7 +3,7 @@
 // Soft Proofing Effect Plugin for Paint.NET
 //
 // This software is provided under the MIT License:
-//   Copyright (C) 2016-2017 Nicholas Hayes
+//   Copyright (C) 2016-2018 Nicholas Hayes
 //
 // See LICENSE.txt for complete licensing and attribution information.
 //
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("SoftProofing")]
-[assembly: AssemblyCopyright("Copyright © 2016-2017 Nicholas Hayes (aka null54)")]
+[assembly: AssemblyCopyright("Copyright © 2016-2018 Nicholas Hayes (aka null54)")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
