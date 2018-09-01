@@ -10,7 +10,7 @@ A [Paint.NET](http://www.getpaint.net) Effect plugin that simulates how a layer 
   Paint.NET Version |  Effects Folder Location
   --------|----------
   Classic | C:\Program Files\Paint.NET\Effects    
-  Microsoft Store | My Documents\paint.net App Files\Effects
+  Microsoft Store | Documents\paint.net App Files\Effects
   
 3. Restart Paint.NET.
 4. The plug-in will now be available as the Soft Proofing menu item in the Tools category of the Paint.NET Effects menu.
